@@ -1,0 +1,9 @@
+[Unit]
+After=systemd-user-sessions.service
+
+[Service]
+ExecStart=/bin/su pi -l -c /usr/bin/xinit -- VT08
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

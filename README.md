@@ -22,7 +22,7 @@ In `/etc/X11/Xwrapper.config` (create if not exist), put
 allowed_users=anybody
 ```
 
-Copy the `.xinitrc`, `dashboard.html` and `bg.dif` to your home `/home/pi/`
+Copy the `.xinitrc`, `dashboard.html` and `bg.gif` to your home `/home/pi/`
 
 Disable all other display manager, eg.
 ```

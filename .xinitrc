@@ -7,6 +7,5 @@ xset s off
 # simple fullscreen wm
 matchbox-window-manager -use_cursor no -use_titlebar no &
 
-# start browser
-#exec midori -e Fullscreen -e ZoomIn -a "http://example.com/"
-exec midori -e Fullscreen -e ZoomIn -a "file:///home/pi/dashboard.html"
+#start VNC client
+exec echo "SecurePassword!1" | xtightvncviewer -viewonly -fullscreen -autopass 192.168.1.10:0

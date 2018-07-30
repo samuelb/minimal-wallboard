@@ -1,4 +1,4 @@
-# minimal-wallboard
+# VNC screen
 
 ## Install
 

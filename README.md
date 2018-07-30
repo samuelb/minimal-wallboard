@@ -1,10 +1,5 @@
 # minimal-wallboard
 
-This is my prefered of configuring a RaspberryPi to show my some dashboards on
-TVs which are hanging in my office or or build a simple kiosk installation.
-
-I didn't verify yet what I wrote here. It might not work.
-
 ## Install
 
 Lets assume you have Raspbian installed on your RaspberryPi and you're
@@ -13,8 +8,8 @@ connected via SSH.
 Ensure that some needed packages are installed:
 ```
 $ sudo apt-get install xinit xserver-xorg-legacy x11-xserver-utils \
-  xserver-xorg-fbturbo xfonts-scalable xfonts-100dpi xfonts-75dpi xfonts-base \
-  matchbox-window-manager midori  
+  xfonts-scalable xfonts-100dpi xfonts-75dpi xfonts-base \
+  matchbox-window-manager xtightvncviewer vim
 ```
 
 In `/etc/X11/Xwrapper.config` (create if not exist), put
@@ -22,7 +17,14 @@ In `/etc/X11/Xwrapper.config` (create if not exist), put
 allowed_users=anybody
 ```
 
-Copy the `.xinitrc`, `dashboard.html` and `bg.gif` to your home `/home/pi/`
+In `.xinitrc` change the password ("SecurePassword!1") and the ip (192.168.1.10) or hostname to your VNC server configuration
+```
+#start VNC client
+exec echo "SecurePassword!1" | xtightvncviewer -viewonly -fullscreen -autopass 192.168.1.10:0
+```
+
+Copy the `.xinitrc` to your home `/home/pi/`
+
 
 Disable all other display manager, eg.
 ```

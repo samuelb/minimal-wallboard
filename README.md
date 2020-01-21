@@ -13,8 +13,8 @@ connected via SSH.
 Ensure that some needed packages are installed:
 ```
 $ sudo apt-get install xinit xserver-xorg-legacy x11-xserver-utils \
-  xserver-xorg-fbturbo xfonts-scalable xfonts-100dpi xfonts-75dpi xfonts-base \
-  midori  
+  xserver-xorg-video-fbturbo xfonts-scalable xfonts-100dpi xfonts-75dpi xfonts-base \
+  midori matchbox-window-manager
 ```
 
 In `/etc/X11/Xwrapper.config` (create if not exist), put

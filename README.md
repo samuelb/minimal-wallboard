@@ -1,7 +1,7 @@
 # minimal-wallboard
 
-This is my prefered of configuring a RaspberryPi to show my some dashboards on
-TVs which are hanging in my office or or build a simple kiosk installation.
+This is my prefered configuring of a RaspberryPi to show me some dashboards on
+TVs which are hanging in my office or to build a simple kiosk installation.
 
 I didn't verify yet what I wrote here. It might not work.
 
